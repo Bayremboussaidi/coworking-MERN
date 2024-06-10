@@ -1,0 +1,28 @@
+<!-- views/reservationForm.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+</head>
+<body>
+  <h1>Create a New Reservation</h1>
+  <form action="/reservation" method="post">
+    <label for="roomId">Select a Room:</label>
+    <select id="roomId" name="roomId">
+      <option value="">Select...</option>
+      <!-- Populate options dynamically if needed -->
+    </select>
+    <br>
+    <label for="startTime">Start Time:</label>
+    <input type="datetime-local" id="startTime" name="startTime">
+    <br>
+    <label for="endTime">End Time:</label>
+    <input type="datetime-local" id="endTime" name="endTime">
+    <br>
+    <button type="submit">Create Reservation</button>
+  </form>
+</body>
+</html>
